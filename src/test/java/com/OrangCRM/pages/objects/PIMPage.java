@@ -7,8 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.OrangeCRM.utlis.BaseClass;
 
 public class PIMPage extends BaseClass {
-	private static final String WebElement = null;
-
+	
 	public PIMPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -61,10 +60,12 @@ public class PIMPage extends BaseClass {
 	@FindBy(xpath= maritalStatusDropxpath)
 	WebElement maritalStatusDrop;
 	
-	//@FindBy(xpath=//"label[text()='Blood Type']/following::div[1]")
-	//WebElement bloodType;
 	
-
+	@FindBy(xpath=booldTypeDropxpath)
+	WebElement booldTypeDrop;
+	
+	
+	
 	
 	public void creatEmployee(String fName,String lName,String uName,String password) throws InterruptedException {
 		
@@ -91,8 +92,8 @@ public class PIMPage extends BaseClass {
 		selectDropdown(ListBoxDrop,nationality);
 		 maritalStatusDrop.click();
 		selectDropdown(ListBoxDrop,maritalStatus);
-		//bloodType.click();
-		//selectDropdown(ListBoxDrop,bloodType);
+		booldTypeDrop.click();
+		selectDropdown(ListBoxDrop,bloodTypDrop);
 		
 	
 	}

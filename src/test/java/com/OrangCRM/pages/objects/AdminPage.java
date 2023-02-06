@@ -11,7 +11,7 @@ public class AdminPage extends BaseClass {
 	PageFactory.initElements(driver,this);
 }
 	
- @FindBy(xpath="addminlinkxpath")
+ @FindBy(xpath="//span[text()='Admin']")
  WebElement addminlink;
  
  @FindBy(xpath="addButtonxpath")

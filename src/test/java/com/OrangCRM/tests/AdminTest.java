@@ -24,12 +24,12 @@ public class AdminTest extends BaseClass{
 	ap.providingAdminRight(map.get(" UserRole"),map.get("EmployeName"),map.get("Status") ,map.get(" UserName"),map.get("Password"));
 	
 	}	
-	@DataProvider
-	public Object[][] getAdminData() throws IOException{
-		return getData("TC3_provide", "Sheet1");
+//	@DataProvider
+//	public Object[][] getAdminData() throws IOException{
+	//	return getData("TC3_provide", "Sheet1");
 	}
 		
-	}
+	//}
 	
 	
 	

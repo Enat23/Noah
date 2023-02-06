@@ -41,9 +41,7 @@ public class OC {
 	
 	public static final String  maritalStatusDropxpath="//label[text()='Marital Status']/following::div[2]";
 	
-//	public static final String="//span[text()='Admin']";
-//	
-//	public static finalan[text()='Admin']";
-//	
+	public static final String booldTypeDropxpath="//lable[text()='Blood Type']/following::div[1]";
+
 	
 }

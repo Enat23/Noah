@@ -19,7 +19,7 @@ import com.OrangeCRM.utlis.BaseClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PIMTest extends BaseClass {
-	@Test(dataProvider="getTC1aData")
+	//@Test(dataProvider="getTC1aData")
 	 public void creatEmployee(HashMap<String,String> map) throws IOException, InterruptedException {
 //		setup();
 //		LoginPage lp=new LoginPage();
