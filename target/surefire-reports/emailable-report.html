@@ -9,20 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">16,639</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">7,820</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.OrangCRM.tests.PIMTest</td><td><a href="#m0">creatEmployee</a></td><td rowspan="1">1675267479754</td><td rowspan="1">4166</td></tr><tr class="failedeven"><td><a href="#m1">editEmployee</a></td><td rowspan="1">1675267483941</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.OrangCRM.tests.PIMTest</td><td><a href="#m0">OpenApp</a></td><td rowspan="1">1675697801824</td><td rowspan="1">6065</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.OrangCRM.tests.PIMTest</td><td><a href="#m1">creatEmployee</a></td><td rowspan="1">1675697807929</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.OrangCRM.tests.PIMTest#creatEmployee</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{firstName=Noah, UserName=Noah1, LastName=Yigletu, PassWord=Noah@123}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //label[text()=&apos;Username&apos;]/following::input[1 because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//label[text()=&apos;Username&apos;]/following::input[1&apos; is not a valid XPath expression.
+<h2>Test</h2><h3 id="m0">com.OrangCRM.tests.PIMTest#OpenApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3cff4c819910b330510014ce637793d, findElement {using=xpath, value=//label[text()=&apos;Username&apos;]/following::input[1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\enat_\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61520/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b3cff4c819910b330510014ce637793d
+Command: [c46d1aed03dc773fb0113b27d831981a, findElement {using=xpath, value=//input[@name=&apos;username&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\enat_\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65146/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c46d1aed03dc773fb0113b27d831981a
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -37,11 +36,34 @@ Session ID: b3cff4c819910b330510014ce637793d
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.OrangCRM.pages.objects.PIMPage.creatEmployee(PIMPage.java:76)
-	at com.OrangCRM.tests.PIMTest.creatEmployee(PIMTest.java:28)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.OrangCRM.tests.PIMTest#editEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Method public void com.OrangCRM.tests.PIMTest.editEmployee(java.util.HashMap) throws java.lang.InterruptedException requires a @DataProvider named : getTC2Data
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at com.OrangCRM.pages.objects.LoginPage.doLogin(LoginPage.java:22)
+	at com.OrangeCRM.utlis.BaseClass.OpenApp(BaseClass.java:46)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.OrangCRM.tests.PIMTest#creatEmployee</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.120)
+Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c46d1aed03dc773fb0113b27d831981a, findElement {using=xpath, value=//input[@name=&apos;username&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\enat_\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65146/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c46d1aed03dc773fb0113b27d831981a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.OrangCRM.pages.objects.LoginPage.doLogin(LoginPage.java:22)
+	at com.OrangeCRM.utlis.BaseClass.OpenApp(BaseClass.java:46)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

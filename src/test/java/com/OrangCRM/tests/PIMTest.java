@@ -19,7 +19,7 @@ import com.OrangeCRM.utlis.BaseClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class PIMTest extends BaseClass {
-	//@Test(dataProvider="getTC1aData")
+	@Test(dataProvider="getTC1aData")
 	 public void creatEmployee(HashMap<String,String> map) throws IOException, InterruptedException {
 //		setup();
 //		LoginPage lp=new LoginPage();
@@ -31,7 +31,7 @@ public class PIMTest extends BaseClass {
 		wrightSpecificDataToDataSheet("Sheet1","EmployeName",empName,"TC2_EditEm");	 
 	 }
 	
-	@Test(dataProvider="getTC2Data",priority=2)
+	//@Test(dataProvider="getTC2Data",priority=2)
 	public void editEmployee(HashMap<String,String> map) throws InterruptedException {
 //		setup();
 //		LoginPage lp= new LoginPage();

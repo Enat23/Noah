@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.OrangCRM.tests.AdminTest">
+      <class name="com.OrangCRM.tests.PIMTest">
         <methods>
           <include name="OpenApp"/>
-          <include name="providingAdminRight"/>
+          <include name="creatEmployee" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.OrangCRM.tests.AdminTest -->
+      </class> <!-- com.OrangCRM.tests.PIMTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

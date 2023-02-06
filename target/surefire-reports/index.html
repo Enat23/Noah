@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.OrangCRM.tests.PIMTest" hash-for-method="creatEmployee({firstName=Noah, UserName=Noah1, LastName=Yigletu, PassWord=Noah@123})">creatEmployee({firstName=Noah, UserName=Noah1, LastName=Yigletu, PassWord=Noah@123})</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.OrangCRM.tests.PIMTest" hash-for-method="creatEmployee">creatEmployee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.OrangCRM.tests.PIMTest" hash-for-method="editEmployee">editEmployee</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,28 +117,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.OrangCRM.tests.PIMTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="creatEmployee({firstName=Noah, UserName=Noah1, LastName=Yigletu, PassWord=Noah@123})">
-                  </a> <!-- creatEmployee({firstName=Noah, UserName=Noah1, LastName=Yigletu, PassWord=Noah@123}) -->
+                  <a name="creatEmployee">
+                  </a> <!-- creatEmployee -->
                   <span class="method-name">creatEmployee</span>
-                  <span class="parameters">({firstName=Noah, UserName=Noah1, LastName=Yigletu, PassWord=Noah@123})</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //label[text()=&apos;Username&apos;]/following::input[1 because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//label[text()=&apos;Username&apos;]/following::input[1&apos; is not a valid XPath expression.
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=109.0.5414.120)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_351&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3cff4c819910b330510014ce637793d, findElement {using=xpath, value=//label[text()=&apos;Username&apos;]/following::input[1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\enat_\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61520/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b3cff4c819910b330510014ce637793d
+Command: [c46d1aed03dc773fb0113b27d831981a, findElement {using=xpath, value=//input[@name=&apos;username&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\enat_\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65146/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c46d1aed03dc773fb0113b27d831981a
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -158,25 +151,14 @@ Session ID: b3cff4c819910b330510014ce637793d
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at com.OrangCRM.pages.objects.PIMPage.creatEmployee(PIMPage.java:76)
-	at com.OrangCRM.tests.PIMTest.creatEmployee(PIMTest.java:28)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="editEmployee">
-                  </a> <!-- editEmployee -->
-                  <span class="method-name">editEmployee</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Method public void com.OrangCRM.tests.PIMTest.editEmployee(java.util.HashMap) throws java.lang.InterruptedException requires a @DataProvider named : getTC2Data
-... Removed 25 stack frames
+	at com.OrangCRM.pages.objects.LoginPage.doLogin(LoginPage.java:22)
+	at com.OrangeCRM.utlis.BaseClass.OpenApp(BaseClass.java:46)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -229,20 +211,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'creatEmployee')
 data.setCell(0, 2, 'com.OrangCRM.tests.PIMTest')
-data.setCell(0, 3, 4166);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'editEmployee')
-data.setCell(1, 2, 'com.OrangCRM.tests.PIMTest')
-data.setCell(1, 3, 0);
+data.setCell(0, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -269,16 +247,16 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.OrangCRM.tests.PIMTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">creatEmployee</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">OpenApp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">creatEmployee({firstName=Noah, UserName=Noah1, LastName=Yigletu, PassWord=Noah@123})</span>
-                <span class="method-start">10478 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

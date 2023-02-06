@@ -6,8 +6,7 @@
       <class name="com.OrangCRM.tests.PIMTest">
         <methods>
           <include name="OpenApp"/>
-          <include name="creatEmployee" invocation-numbers="0"/>
-          <include name="editEmployee"/>
+          <include name="creatEmployee"/>
         </methods>
       </class> <!-- com.OrangCRM.tests.PIMTest -->
     </classes>
